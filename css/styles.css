@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+	font-size: 62.5%;
+}
+@font-face {
+	font-family: Heebo;
+	src: url('../fonts/Heebo.ttf');
+}
+
+body{
+    font-family: Heebo;
+    font-size: 15px;
+
+}
+.grilla{
+    display: grid;
+    width: 90%;
+    max-width: 1200px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:"encabezado encabezado encabezado"
+                        "baner baner baner"
+                        "noticias noticias noticias"
+                        "card1 card2 card3"
+                        "tecnologia tecnologia tecnologia"
+                        "pie pie pie";
+}
+
+.encabezado{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: flex-end;
+    grid-area: encabezado;
+}
+
+.encabezado_logo{
+    height: 60px;
+}
+.encabezado_navegador{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: flex-end;
+}
+.navegador_lista{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: right;
+    
+}
+ul li {
+    color: white;
+    text-align: center;
+    background:#676FA3;
+    width: 100px;
+    height: 25px;
+    border-radius: 20px;
+
+}
+ul li a{
+    color: white;
+    background:#676FA3;
+    text-decoration: none;
+}
+ul ul {
+    position: relative;
+    display: none;
+    list-style: none;
+ }
+ul ul li a {color: white;}
+ul li:hover ul {
+    position: absolute;
+    display:block;
+    background-color:#676FA3;
+    border-radius: 20px;
+}
+.baner{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.473)), url("../images/laboratorio.jpg");
+    color: white;
+    flex-wrap: nowrap;
+    grid-area: baner;
+}
+.noticias{
+    grid-area: noticias;
+    background-color: #FF5959;
+}
+
+.grilla .card1, 
+.grilla .card2, 
+.grilla .card3{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: solid 1px black;
+    border-radius: 5px;
+    align-items: center;
+width: 250px;
+    height: 300px;
+    margin: 10px;
+    justify-self: center;
+}
+.card1{
+    grid-area: card1;
+}
+.card2{
+    grid-area: card2;
+}
+.card3{
+    grid-area: card3;
+}
+.card1 img{
+    width: 150px;
+    height: 100px;
+}
+.card2 img{
+    width: 150px;
+    height: 100px;
+}
+.card3 img{
+    width: 150px;
+    height: 100px;
+}
+p{
+    text-align: justify;
+    overflow: hidden;
+}
+
+.card1 a,.card2 a, .card3 a{
+    text-decoration: none;
+    border: solid 1px black;
+    border-radius: 5px;
+
+}
+.tecnologia{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    grid-area: tecnologia;
+}
+
+.tecnologia h2{
+    background-color: #FF5959;
+}
+
+/*Aqui comienza el footer */
+.pie{
+    background-color: #EEF2FF;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 200px;
+    grid-area: pie;
+}
+.pie_texto{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Comienzo Pages Contacto*/
+.grilla2{
+    display: grid;
+    width: 90%;
+    max-width: 1200px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:"encabezado encabezado encabezado"
+                        "baner baner baner"
+                        "direccion formulario formulario"
+                        "pie pie pie";
+}
+.formulario{
+    grid-area: formulario;
+    display: flex;
+justify-content: center;
+
+
+}
+.direccion{
+    grid-area: direccion;
+    text-align:left;
+    margin-top: 50px;
+   
+}
+
+/*Fin Pages Contacto*/
+@media screen and (max-width: 368px){
+.grilla{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:"encabezado encabezado"
+                        "noticias noticias"
+                        "card1 card1"
+                        "card2 card2"
+                        "card3 card3"
+                        "tecnologia tecnologia"
+                        "pie pie"
+}
+.grilla2{
+    display: grid;
+    width: 90%;
+    max-width: 1200px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:"encabezado encabezado"
+                        "direccion direccion"
+                        "formulario formulario"
+                        "pie pie";
+}
+.encabezado{
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.navegador_lista{
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+.encabezado_navegador{
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+.baner{
+    display: none;
+}
+iframe{
+    height: 200px;
+    width: 250px;
+}
+
+}
