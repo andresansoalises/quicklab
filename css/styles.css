@@ -16,21 +16,6 @@ body{
     font-size: 15px;
 
 }
-.grilla{
-    display: grid;
-    width: 90%;
-    max-width: 1200px;
-    margin: 10px auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, auto);
-    grid-template-areas:"encabezado encabezado encabezado"
-                        "baner baner baner"
-                        "noticias noticias noticias"
-                        "card1 card2 card3"
-                        "tecnologia tecnologia tecnologia"
-                        "pie pie pie";
-}
 
 .encabezado{
     display: flex;
@@ -59,17 +44,15 @@ body{
     
 }
 ul li {
-    color: white;
+    color: rgb(7, 7, 7);
     text-align: center;
-    background:#676FA3;
     width: 100px;
     height: 25px;
     border-radius: 20px;
 
 }
 ul li a{
-    color: white;
-    background:#676FA3;
+    color: rgb(10, 10, 10);
     text-decoration: none;
 }
 ul ul {
@@ -77,96 +60,30 @@ ul ul {
     display: none;
     list-style: none;
  }
-ul ul li a {color: white;}
+ul ul li a {color: rgb(7, 7, 7);}
 ul li:hover ul {
     position: absolute;
     display:block;
-    background-color:#676FA3;
-    border-radius: 20px;
+
 }
 
-
-/*BANER ANIMADO */
 .baner{
-    height: 300px;
+    width: 100%;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.473)), url("../images/laboratorio.jpg");
     color: white;
     flex-wrap: nowrap;
-    grid-area: baner;
-    animation: baner 10s infinite linear alternate;
-    position: relative;
 }
 
-@keyframes baner {
-    0%, 20%{
-        background-image: url(../images/baner1.jpg);
-    }
-    25%, 45%{
-        background-image: url(../images/baner2.jpg);
-    }    
-    50%, 70%{
-        background-image: url(../images/baner3.jpg);
-    }   
-     75%, 100%{
-        background-image: url(../images/laboratorio.jpg);
-    }
-}
-/*-----------------------------*/
 .noticias{
-    grid-area: noticias;
     background-color: #FF5959;
+    font-weight: bolder;
 }
 
-.grilla .card1, 
-.grilla .card2, 
-.grilla .card3{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    border: solid 1px black;
-    border-radius: 5px;
-    align-items: center;
-width: 200px;
-    height: 300px;
-    margin: 10px;
-    justify-self: center;
 
-}
-.card1{
-    grid-area: card1;
-}
-.card2{
-    grid-area: card2;
-}
-.card3{
-    grid-area: card3;
-}
-.card1 img{
-    width: 150px;
-    height: 100px;
-}
-.card2 img{
-    width: 150px;
-    height: 100px;
-}
-.card3 img{
-    width: 150px;
-    height: 100px;
-}
-p{
-    text-align: justify;
-    overflow: hidden;
-}
-
-.card1 a,.card2 a, .card3 a{
-    text-decoration: none;
-    border: solid 1px black;
-    border-radius: 5px;
-
-}
 .tecnologia{
     display: flex;
     flex-direction: column;
@@ -194,20 +111,7 @@ p{
     flex-direction: column;
 }
 
-/*Comienzo Pages Contacto*/
-.grilla2{
-    display: grid;
-    width: 90%;
-    max-width: 1200px;
-    margin: 10px auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas:"encabezado encabezado encabezado"
-                        "baner baner baner"
-                        "direccion formulario formulario"
-                        "pie pie pie";
-}
+
 .formulario{
     grid-area: formulario;
     display: flex;
@@ -224,17 +128,7 @@ justify-content: center;
 
 /*Fin Pages Contacto*/
 @media screen and (max-width: 368px){
-.grilla{
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, auto);
-    grid-template-areas:"encabezado encabezado"
-                        "noticias noticias"
-                        "card1 card1"
-                        "card2 card2"
-                        "card3 card3"
-                        "tecnologia tecnologia"
-                        "pie pie"
-}
+
 .grilla2{
     display: grid;
     width: 90%;
@@ -269,7 +163,7 @@ justify-content: center;
 }
 iframe{
     height: 200px;
-    width: 250px;
+    width: 200px;
 }
 
 }

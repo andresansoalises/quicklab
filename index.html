@@ -12,66 +12,103 @@
       <link class=logo rel="shortcut icon" href="images/icono.png">
  </head>
  <body>
-    <div class="grilla">
-     <header class="encabezado">
-      <!-- inicio encabezado -->
-      <img class="encabezado_logo" src="images/logo.png" alt="logo sitio"><!-- logo -->
-        <!-- inicio nav -->
-        <nav class="encabezado_navegador">
-            <ul class="navegador_lista">
-                 <li>Home</li>
-                 <li>Servicios
-                     <ul>
-                         <li>Análisis</li>
-                         <li><a href="pages/promociones.html">Promociones</a></li>
-                     </ul>
-                 </li>
-                 <li><a href="pages/resultados.html">Resultados</a></li>
-                 <li><a href="pages/nosotros.html">Nosotros</a></li>
-                 <li><a href="pages/contacto.html">Contacto</a></li>
-             </ul>
-        </nav>
-         <!-- fin nav -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-md">
+          <a class="navbar-brand" href="#"><img class="encabezado_logo" src="images/logo.png" alt="logo sitio"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active fw-bold fs-4" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fw-bold fs-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-current="page">
+                  Servicios
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item fw-bold fs-4" href="#">Análisis</a></li>
+                  <li><a class="dropdown-item fw-bold fs-4" href="pages/promociones.html">Promociones</a></li>
+                </ul>
+              </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold fs-4" aria-current="page" href="pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold fs-4" aria-current="page" href="pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
      </header>
          <!-- fin encabezado -->
-         <div class="baner"></div>
+         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/laboratorio.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/baner2.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       <!-- inicio sección noticias --> 
       <section class="noticias">
         <h2>Noticias</h2>
       </section>
-         <div class="card1">
-          <img src="images/secuenciador.jpg" alt="secuenciador">
-            <h3>Nuevo secuenciador de ADN</h3>
-            <p>Se trata del analizador genético SeqStudio, equipo que aumenta la capacidad para procesar pruebas de paternidad, identificación y muestras para el Registro Nacional de ADN. La secuenciación genética es una tecnología que permite conocer y descifrar el código genético que tienen todos los seres vivos.</p>
-            <a href="#">Ver más</a>
+      <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <img src="images/secuenciador.jpg" class="card-img-top" alt="seuenciador">
+            <div class="card-body">
+              <h3 class="card-title">Nuevo secuenciador de ADN</h3>
+              <p class="card-text">Se trata del analizador genético SeqStudio, equipo que aumenta la capacidad para procesar pruebas de paternidad, identificación y muestras para el Registro Nacional de ADN. La secuenciación genética es una tecnología que permite conocer y descifrar el código genético que tienen todos los seres vivos.</p>
+              <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
           </div>
-         <div class="card2">
-          <img src="images/citometro.jpg" alt="citometro">
-              <h3>Citometría de flujo</h3>
-              <p>Actualmente, a través de la implementación de citometría de flujo de “nueva generación” (Next generation flow) se ha logrado la detección de células neoplásicas con tanta sensibilidad, que las mismas pueden ser analizadas en sangre periférica (SP) de pacientes con Mieloma Múltiple. Así también, para la evaluación </p>
-              <a href="#">Ver más</a>
-         </div>
-         <div class="card3">
-          <img src="images/vitD.jpg" alt="vitD">
-               <h3>Medición de Vitamina D</h3>
-               <p>Examen de 25-hidroxi vitamina D
-              Enviar esta página a un amigo Imprimir Facebook Twitter Pinterest
-              El examen de 25-hidroxi vitamina D es la forma más exacta de medir cuánta vitamina D hay en el cuerpo.
-   
-              La vitamina D ayuda a controlar los niveles de calcio y fosfato en el cuerpo.
-   
-              Forma en que se realiza el examen
-              Se necesita una muestra de sangre. Se dispone de dos métodos:
-
-              Se extrae sangre de la vena. Esto se hace en un laboratorio.
-              Pinchazo en el dedo. Esto se puede hacer en el consultorio de su proveedor de atención médica. O le pueden recetar un equipo que usted pueda usar en casa. En general, esta prueba es menos precisa que los otros métodos. </p>
-              <a href="#">Ver más</a>
-         </div>
-
+        </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+            <img src="images/citometro.jpg" class="card-img-top" alt="citometro">
+            <div class="card-body">
+              <h3 class="card-title">Citometría de flujo</h3>
+              <p class="card-text">Actualmente, a través de la implementación de citometría de flujo de “nueva generación” (Next generation flow) se ha logrado la detección de células neoplásicas con tanta sensibilidad, que las mismas pueden ser analizadas en sangre periférica (SP) de pacientes con Mieloma Múltiple. Así también, para la evaluación </p>
+              <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+            <img src="images/vitD.jpg" class="card-img-top" alt="vitD">
+            <div class="card-body">
+              <h3 class="card-title">Medición de Vitamina D</h3>
+              <p class="card-text">El examen de 25-hidroxi vitamina D es la forma más exacta de medir cuánta vitamina D hay en el cuerpo. La vitamina D ayuda a controlar los niveles de calcio y fosfato en el cuerpo. Forma en que se realiza el examen. Se necesita una muestra de sangre. Se dispone de dos métodos, a partir de los cuales se puede obterner.</p>
+              <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
       <div class="tecnologia">
         <h2>Nuestra tecnología</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Slaa8o1ZYoo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
+        <div class="ratio ratio-21x9">
+          <iframe src="https://www.youtube.com/embed/Slaa8o1ZYoo" title="YouTube video"></iframe>
+        </div>
          <!-- inicio footer -->     
            <footer class="pie">
                <img class="encabezado_logo" src="images/logo.png" alt="logo sitio">
@@ -84,7 +121,7 @@
                </div>
              </footer>
     <!-- fin footer -->
-  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
  </body>
 </html>
