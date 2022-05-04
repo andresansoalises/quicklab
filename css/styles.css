@@ -25,47 +25,6 @@ body{
     grid-area: encabezado;
 }
 
-.encabezado_logo{
-    height: 60px;
-}
-.encabezado_navegador{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items: flex-end;
-}
-.navegador_lista{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: right;
-    
-}
-ul li {
-    color: rgb(7, 7, 7);
-    text-align: center;
-    width: 100px;
-    height: 25px;
-    border-radius: 20px;
-
-}
-ul li a{
-    color: rgb(10, 10, 10);
-    text-decoration: none;
-}
-ul ul {
-    position: relative;
-    display: none;
-    list-style: none;
- }
-ul ul li a {color: rgb(7, 7, 7);}
-ul li:hover ul {
-    position: absolute;
-    display:block;
-
-}
 
 .baner{
     width: 100%;
@@ -94,6 +53,7 @@ ul li:hover ul {
 .tecnologia h2{
     background-color: #FF5959;
 }
+
 
 /*Aqui comienza el footer */
 .pie{
@@ -126,7 +86,7 @@ justify-content: center;
    
 }
 
-/*Fin Pages Contacto*/
+
 @media screen and (max-width: 368px){
 
 .grilla2{
@@ -142,22 +102,7 @@ justify-content: center;
                         "formulario formulario"
                         "pie pie";
 }
-.encabezado{
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-.navegador_lista{
-    flex-direction: column;
-    flex-wrap: wrap;
 
-}
-.encabezado_navegador{
-    flex-direction: column;
-    flex-wrap: wrap;
-
-}
 .baner{
     display: none;
 }
