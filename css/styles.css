@@ -17,15 +17,6 @@ body{
 
 }
 
-.encabezado{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    align-items: flex-end;
-    grid-area: encabezado;
-}
-
-
 .baner{
     width: 100%;
     height: 50vh;
@@ -47,7 +38,6 @@ body{
     display: flex;
     flex-direction: column;
     height: 300px;
-    grid-area: tecnologia;
 }
 
 .tecnologia h2{
@@ -64,7 +54,6 @@ body{
     flex-wrap: nowrap;
     align-items: center;
     height: 200px;
-    grid-area: pie;
 }
 .pie_texto{
     display: flex;
@@ -84,31 +73,4 @@ justify-content: center;
     text-align:left;
     margin-top: 50px;
    
-}
-
-
-@media screen and (max-width: 368px){
-
-.grilla2{
-    display: grid;
-    width: 90%;
-    max-width: 1200px;
-    margin: 10px auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas:"encabezado encabezado"
-                        "direccion direccion"
-                        "formulario formulario"
-                        "pie pie";
-}
-
-.baner{
-    display: none;
-}
-iframe{
-    height: 200px;
-    width: 200px;
-}
-
 }

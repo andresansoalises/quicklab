@@ -1,0 +1,30 @@
+@import "variables";
+@import "pie";
+html{
+	font-size: 62.5%;
+}
+@font-face {
+	font-family: Heebo;
+	src: url('../fonts/Heebo.ttf');
+}
+
+body{
+    font-family: Heebo;
+    font-size: 15px;
+
+}
+.encabezado{
+    background-color: $colorprimario;
+}
+.baner{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.473)), url("../images/laboratorio.jpg");
+    color: white;
+    flex-wrap: nowrap;
+}
+
+
