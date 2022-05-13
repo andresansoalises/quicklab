@@ -1,5 +1,8 @@
-@import "variables";
-@import "pie";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html{
 	font-size: 62.5%;
 }
@@ -13,9 +16,7 @@ body{
     font-size: 15px;
 
 }
-.encabezado{
-    background-color: $colorprimario;
-}
+
 .baner{
     width: 100%;
     height: 50vh;
@@ -26,5 +27,69 @@ body{
     color: white;
     flex-wrap: nowrap;
 }
+/*APLICANDO MAPA Y MIXIN*/
+$color: (
+    "primario" : #FF5959,
+    "secundario": #ff59ff,
+    "boton": #7d59ff, 
+);
+
+@mixin titulo {
+    color: black;
+    font-size: 20x;
+    
+}
+
+.noticias{
+    @include titulo();
+    background-color: map-get($color, primario);
+}
+
+.tecnologia {
+    h2{
+        @include titulo();
+        background-color: map-get($color, secundario);
+    }
+}
+
+/*-----------------------------------------------*/
+.tecnologia{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+
+/*Aqui comienza el footer */
+.pie{
+    background-color: #EEF2FF;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 200px;
+}
+.pie_texto{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.formulario{
+    grid-area: formulario;
+    display: flex;
+justify-content: center;
+
+
+}
+.direccion{
+    grid-area: direccion;
+    text-align:left;
+    margin-top: 50px;
+   
+}
+
+
+
 
 

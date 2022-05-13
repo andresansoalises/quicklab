@@ -1,3 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+@font-face {
+  font-family: Heebo;
+  src: url("../fonts/Heebo.ttf"); }
+
+body {
+  font-family: Heebo;
+  font-size: 15px; }
+
+.baner {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.473)), url("../images/laboratorio.jpg");
+  color: white;
+  flex-wrap: nowrap; }
+
+/*APLICANDO MAPA Y MIXIN*/
+.noticias {
+  color: black;
+  font-size: 20x;
+  background-color: #FF5959; }
+
+.tecnologia h2 {
+  color: black;
+  font-size: 20x;
+  background-color: #ff59ff; }
+
+/*-----------------------------------------------*/
+.tecnologia {
+  display: flex;
+  flex-direction: column;
+  height: 300px; }
+
+/*Aqui comienza el footer */
 .pie {
   background-color: #EEF2FF;
   display: flex;
@@ -11,26 +55,12 @@
   display: flex;
   flex-direction: column; }
 
-html {
-  font-size: 62.5%; }
-
-@font-face {
-  font-family: Heebo;
-  src: url("../fonts/Heebo.ttf"); }
-
-body {
-  font-family: Heebo;
-  font-size: 15px; }
-
-.encabezado {
-  background-color: #EEF2FF; }
-
-.baner {
-  width: 100%;
-  height: 50vh;
+.formulario {
+  grid-area: formulario;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.473)), url("../images/laboratorio.jpg");
-  color: white;
-  flex-wrap: nowrap; }
+  justify-content: center; }
+
+.direccion {
+  grid-area: direccion;
+  text-align: left;
+  margin-top: 50px; }
