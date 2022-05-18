@@ -6,6 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/estilos.scss css/pruebacss.css",
+    "build-css": "node-sass --include-path scss scss/sassbootstrap.scss css/sassbootstrap.css",
+
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
@@ -21,5 +23,8 @@
   "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
   }
 }
